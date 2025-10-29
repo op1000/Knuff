@@ -33,7 +33,7 @@ NSArray<NSString *> * APNSSecIdentityGetTopics(SecIdentityRef identity) {
   
   NSDictionary *values = APNSecValuesForIndentity(identity);
   
-  if (values[APNSSecIdentityTypeDevelopmentCustomExtension] && values[APNSSecIdentityTypeProductionCustomExtension]) {
+  if (values[APNSSecIdentityTypeDevelopmentCustomExtension] && values[APNSSecIdentityTypeUniversalCustomExtension]) {
     
       NSDictionary *topicContents = values[APNSSecIdentityTypeUniversalCustomExtension];
       if (topicContents) {

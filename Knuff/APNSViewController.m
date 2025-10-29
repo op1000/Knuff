@@ -99,8 +99,6 @@
 
   [self.payloadTypePopUpButton removeAllItems];
   [self.payloadTypePopUpButton addItemsWithTitles:APNSItemPushTypesAll()];
-  
-  [[MGSUserDefaultsController sharedController] addFragariaToManagedSet:self.fragariaView];
 }
 
 #pragma mark -
